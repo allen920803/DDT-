@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDT 遺產規劃</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #141414;
+            color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #ff69b4;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #333;
+            box-shadow: 0 4px 2px -2px gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #e6e6e6;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #ff69b4;
+            color: #fff;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #ff69b4;
+            border-bottom: 2px solid #ff69b4;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .feature {
+            background-color: #222;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s;
+        }
+
+        .feature:hover {
+            background-color: #ff69b4;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ff69b4;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+            }
+
+            nav a {
+                padding: 10px 12px;
+                margin: 5px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DDT 遺產規劃</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">首頁</a>
+        <a onclick="showSection('knowledge')">法規知識</a>
+        <a onclick="showSection('methods')">繼承方法</a>
+        <a onclick="showSection('tax-avoidance')">避稅方法</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="section active">
+            <h2>歡迎來到 DDT 遺產規劃</h2>
+            <p>我們致力於提供最專業的遺產規劃服務，幫助您了解遺產相關的法規、繼承方法，以及如何透過保險及信託基金達到合法避稅的目的。透過我們的專業服務，您可以確保財產得到最妥善的處理和分配。</p>
+            <img src="https://images.pexels.com/photos/1096925/pexels-photo-1096925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="遺產規劃">
+            <div class="feature">
+                <h3>專業諮詢服務</h3>
+                <p>我們的專家團隊擁有豐富的經驗，能為您提供專業的遺產規劃諮詢，確保您的財產得到妥善處理。遺產規劃涉及多方面的法律和財務知識，我們的團隊會為您量身定制最合適的方案，讓您的資產在您離世後得到最佳的管理和分配。</p>
+                <p>我們的專家會幫助您了解各種遺產相關的法律法規，確保您在規劃過程中符合法律要求，避免不必要的法律糾紛。我們會根據您的具體情況，提出最佳的遺產規劃建議，讓您在面對複雜的法律問題時能夠輕鬆應對。</p>
+            </div>
+            <div class="feature">
+                <h3>個性化方案</h3>
+                <p>根據您的需求，我們將為您量身定制最合適的遺產規劃方案，幫助您最大化保護您的財產。每個人的財務情況和家庭結構都不同，我們會根據您的具體情況，設計出最適合您的遺產規劃方案，確保您的財產能夠按照您的意願進行分配。</p>
+                <p>我們的個性化方案包括遺囑的訂立、信託基金的設立、保險的購買等多種方式，確保您的財產在您離世後能夠得到妥善的管理和分配。我們會根據您的需求，提供最合適的遺產規劃方案，讓您的家人和受益人能夠在您離世後繼續享有您的財產。</p>
+            </div>
+            <img src="https://images.pexels.com/photos/415767/pexels-photo-415767.jpeg?auto=compress&cs=tinysrgb&w=600" alt="專業諮詢">
+        </div>
+
+        <div id="knowledge" class="section">
+            <h2>遺產相關法規的知識補給</h2>
+            <p>遺產稅法是指關於遺產轉移的法律規範。在台灣，遺產稅的法律依據主要是《遺產及贈與稅法》。根據該法，遺產稅是對個人死亡後遺留的財產進行徵稅的一種稅種。遺產稅的稅基為死者遺留的所有財產，扣除相關費用和免稅額後的淨值。</p>
+            <p>在申報遺產稅時，需注意以下幾個方面：</p>
+            <ul>
+                <li>遺產評估：遺產價值需按市場價值進行評估。</li>
+                <li>申報期限：遺產稅需在死者死亡後六個月內申報。</li>
+                <li>扣除項目：包括喪葬費用、債務等可從遺產總額中扣除。</li>
+                <li>免稅額：法定繼承人可享有一定的免稅額，具體數額根據法規規定。</li>
+            </ul>
+            <p>除了上述基本規定外，還有一些特殊情況需要注意。例如，對於非居住在台灣的外國人，其在台灣的遺產也需按《遺產及贈與稅法》進行申報和繳納遺產稅。另外，對於一些特定的財產，如股份、房地產等，可能還需要進行專業的估價和評估，確保遺產價值的準確性。</p>
+            <p>在實際操作中，申報遺產稅可能會遇到各種問題，如遺產分割、繼承權糾紛等。因此，建議在申報遺產稅前，先諮詢專業的遺產規劃師或律師，確保申報過程的順利進行。我們的專家團隊可以為您提供全面的遺產稅申報指導，幫助您解決各種遺產稅相關問題。</p>
+            <img src="https://images.pexels.com/photos/3648307/pexels-photo-3648307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="遺產法規">
+            <p>遺產稅法是保護遺產權利的重要法律工具。它不僅確保了遺產的合法轉移，還有助於維護家庭和社會的穩定。因此，了解和遵守遺產稅法規，對於每個家庭和個人來說都是至關重要的。透過正確的遺產規劃，我們可以在遵守法律的前提下，實現財產的最佳管理和分配。</p>
+        </div>
+
+        <div id="methods" class="section">
+            <h2>遺產繼承方法</h2>
+            <p>在台灣，遺產繼承主要分為法定繼承和遺囑繼承兩種方式。</p>
+            <h3>法定繼承</h3>
+            <p>法定繼承是指根據《民法》規定的繼承順序和比例進行遺產分配。繼承人按順序分為：</p>
+            <ol>
+                <li>第一順位：配偶、直系血親卑親屬（如子女）。</li>
+                <li>第二順位：父母。</li>
+                <li>第三順位：兄弟姐妹。</li>
+                <li>第四順位：祖父母。</li>
+            </ol>
+            <p>在法定繼承中，配偶和子女是最主要的繼承人。根據《民法》規定，配偶和子女共同繼承遺產，並按相等的比例分配。如果死者沒有子女，則由配偶和父母共同繼承；如果沒有配偶和子女，則由父母單獨繼承。這樣的繼承順序和比例設計，旨在保護家庭成員的基本權益，確保遺產能夠合理分配。</p>
+            <h3>遺囑繼承</h3>
+            <p>遺囑繼承是指死者在生前通過遺囑指定繼承人及遺產分配方式。遺囑需符合法律規定的形式要件，常見的遺囑形式有：</p>
+            <ul>
+                <li>自書遺囑：由遺囑人親筆書寫、簽名並記載年月日。</li>
+                <li>公證遺囑：由遺囑人口述，經公證人記錄並在遺囑人和兩名證人面前簽名。</li>
+                <li>密封遺囑：由遺囑人自書或請他人代書後密封，並在兩名證人面前交由公證人簽名封存。</li>
+            </ul>
+            <p>遺囑繼承的優點在於遺囑人可以自由選擇繼承人和分配方式，並能對特定財產進行特別處理。例如，遺囑人可以將特定的財產留給特定的親屬或朋友，甚至是慈善機構，這在法定繼承中是無法實現的。然而，遺囑必須符合法律的形式要件，否則可能會被認為無效。因此，建議在訂立遺囑時，最好尋求專業律師的幫助，確保遺囑的合法性和有效性。</p>
+            <p>此外，遺囑人還可以通過設立遺囑信託，進一步保障財產的管理和分配。遺囑信託是一種在遺囑中設立的信託，由遺囑指定的受託人按照遺囑人的意願管理和分配遺產。這種方式可以有效避免遺產分割的糾紛，確保遺產得到合理的管理和使用。</p>
+            <img src="https://images.pexels.com/photos/10499702/pexels-photo-10499702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="遺產繼承">
+            <p>無論是法定繼承還是遺囑繼承，了解和掌握相關的法律規定，對於每個人來說都是非常重要的。透過正確的遺產繼承方法，我們可以確保財產的合法轉移，保護家人的權益，並實現遺產的最佳管理和分配。</p>
+        </div>
+
+        <div id="tax-avoidance" class="section">
+            <h2>如何透過保險及信託基金避稅</h2>
+            <p>透過合理的財務規劃，可以有效降低遺產稅負擔。以下是常見的幾種避稅方法：</p>
+            <h3>保險</h3>
+            <p>保險金額不計入遺產總額，因此通過購買人壽保險，可將部分財產轉化為保險金，避開遺產稅的課稅範圍。受益人可直接獲得保險賠償金，減少遺產分割和稅務爭議。這樣不僅可以有效避稅，還能保障受益人的生活品質，確保他們在經濟上得到充分的保障。</p>
+            <p>在選擇保險產品時，應根據自身的需求和財務狀況，選擇合適的保險種類和保額。例如，終身壽險是一種較為常見的保險種類，其保險期限涵蓋投保人的整個生命週期，保險金額較高，適合作為遺產規劃中的一部分。此外，還有定期壽險、年金保險等不同種類的保險產品，可以根據具體需求進行選擇。</p>
+            <h3>信託基金</h3>
+            <p>設立信託基金是一種靈活的資產管理方式。將財產轉入信託基金後，財產不再屬於個人，而由信託機構管理。信託基金可按照設立人意願進行分配，避免遺產稅的課徵，同時保障受益人的利益。信託基金的設立需要經過專業的法律和財務諮詢，確保信託文件的合法性和有效性。</p>
+            <p>信託基金的運作方式靈活多樣，可以根據設立人的需求進行定制。例如，可以設立一個家庭信託基金，用於保障家庭成員的生活費用、教育費用等；也可以設立一個慈善信託基金，用於捐贈和慈善事業。信託基金的設立和運作需要經過專業的管理，確保資金的安全和有效使用。</p>
+            <h3>生前贈與</h3>
+            <p>生前贈與是指在世時將財產贈與他人，這樣可以提前分配財產，減少遺產稅基。根據《遺產及贈與稅法》，每人每年可享有一定金額的免稅贈與額，超過部分需繳納贈與稅。生前贈與的優點在於可以靈活調整財產的分配方式，避免遺產分割的糾紛。</p>
+            <p>生前贈與需注意合法性和合規性，避免因操作不當引發法律糾紛。例如，在進行生前贈與時，需要確保贈與行為的自願性和真實性，並辦理相關的法律手續。此外，還需要考慮贈與後的財務影響，確保自身的生活品質不受影響。</p>
+            <h3>其他避稅方法</h3>
+            <p>除了上述方法，還有其他合法的避稅方法，例如購買免稅商品、投資免稅金融產品等。具體策略應根據個人財務狀況和需求進行定制。建議在進行遺產規劃時，尋求專業的財務顧問和律師的幫助，確保各項措施的合法性和有效性。</p>
+            <img src="https://images.pexels.com/photos/6266625/pexels-photo-6266625.jpeg?auto=compress&cs=tinysrgb&w=600" alt="避稅方法">
+            <p>透過正確的財務規劃和避稅策略，我們可以有效降低遺產稅負擔，實現財產的最佳管理和分配。無論是保險、信託基金還是生前贈與，都需要在合法合規的前提下進行操作，確保財產的安全和受益人的利益。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DDT 遺產規劃. 從入院到入殮一手包辦.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
